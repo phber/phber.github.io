@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://phber.github.io/sitemap.xml

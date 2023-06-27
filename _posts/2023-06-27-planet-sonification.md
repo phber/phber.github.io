@@ -9,7 +9,7 @@ bibliography: 2023.bib
 
 ---
 
- {% include video.html path="assets/video/solarsounds_demo.webm" class="img-fluid rounded z-depth-1" controls=true autoplay=false center=true %}
+ {% include video.html path="https://www.youtube.com/watch?v=gTdB_1rjpaU" class="img-fluid rounded z-depth-1" controls=true autoplay=false center=true %}
 
 ## Introduction
 This is some background to my data sonification project, which can be experienced live [here](https://phber.github.io/Solarsounds.js/). 

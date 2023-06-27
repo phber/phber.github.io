@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: curiosities
+permalink: /curiosities/
+description: My attempt at illustrating some musical curiosities.
 nav: true
 nav_order: 2
 display_categories: [work, fun]

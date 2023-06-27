@@ -14,6 +14,9 @@
     {% endif %}
 
     <!-- Fallback to the original file -->
+    {% if include.href %}
+    <a href="{{ include.href }}">
+    {% endif %}
     <img 
       src="{{ include.path | relative_url }}"
       {% if include.class %}class="{{ include.class }}"{% endif %}  
@@ -26,9 +29,12 @@
       {% if include.alt %}alt="{{ include.alt }}"{% endif %} 
       {% if include.title %}title="{{ include.title }}"{% endif %} 
       {% if include.zoomable %}data-zoomable{% endif %}
+      {% if include.center %}style="margin:auto; display:block"{% endif %}
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     />
-
+    {% if include.href %}
+    </a>
+    {% endif %}
   </picture>
 
   {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}

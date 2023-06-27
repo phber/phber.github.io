@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Ph(ilip)Ber(gstrom)
+title: Philip Bergström
  # the website title (if bla  nk, full name will be used instead)
 first_name: Philip  
 middle_name: 
-last_name: Bergstrom
+last_name: Bergström
 email: bergstrom@gmail.com.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
  My musical portfolio.

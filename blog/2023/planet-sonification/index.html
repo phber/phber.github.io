@@ -10,10 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>news | Ph(ilip)Ber(gstrom)</title>
+    <title>Sonification of Planet Orbit Data | Ph(ilip)Ber(gstrom)</title>
     <meta name="author" content="Philip  Bergstrom">
-    <meta name="description" content="My musical portfolio.
-">
+    <meta name="description" content="Interactive data sonification and visualization using Tone.js and Three.js">
     <meta name="keywords" content="musician, compositions, performances, technology, programming, portfolio">
 
 
@@ -39,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8E%BB&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://phber.github.io/news/">
+    <link rel="canonical" href="https://phber.github.io/blog/2023/planet-sonification/">
 
     <!-- Dark Mode -->
     
@@ -78,8 +77,8 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/blog/">blog</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
               </li>
 
               <!-- Other pages -->
@@ -117,33 +116,134 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- page.html -->
-        <div class="post">
+        <!-- _layouts/post.html -->
 
-          <header class="post-header">
-            <h1 class="post-title">News</h1>
-            <p class="post-description"></p>
-          </header>
+<div class="post">
 
-          <article>
-                      <div class="news">
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">Jun 27, 2023</th>
-                  <td>
-                    My website is now live <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
+  <header class="post-header">
+    <h1 class="post-title">Sonification of Planet Orbit Data</h1>
+    <p class="post-meta">June 26, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/tag/data-sonification">
+          <i class="fas fa-hashtag fa-sm"></i> data-sonification,</a>  
+          <a href="/blog/tag/visualization">
+          <i class="fas fa-hashtag fa-sm"></i> visualization,</a>  
+          <a href="/blog/tag/javscript">
+          <i class="fas fa-hashtag fa-sm"></i> javscript,</a>  
+          <a href="/blog/tag/tonejs">
+          <i class="fas fa-hashtag fa-sm"></i> tonejs,</a>  
+          <a href="/blog/tag/threejs">
+          <i class="fas fa-hashtag fa-sm"></i> threejs</a>  
+          
 
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
+    </p>
+  </header>
 
-          </article>
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      
+<figure>
 
-        </div>
+  
+
+  <video src="/assets/video/solarsounds_demo.webm" class="img-fluid rounded z-depth-1" width="auto" height="auto" controls="" style="margin:auto; display:block"></video>
+
+  
+
+</figure>
+
+<h2 id="introduction">Introduction</h2>
+<p>This is some background to my data sonification project, which can be experienced live <a href="https://phber.github.io/Solarsounds.js/">here</a>. 
+Sonification is the process that translates data into sound, or the aural counterpart to visualization. In this project, I decided to combine the two in order to <em>sonivisualize</em> (yes, I just made that word up) orbital data from our solar system. The tools I used were <a href="https://github.com/mrdoob/three.js/" rel="external nofollow noopener" target="_blank">Three.js</a> (visualization), <a href="https://github.com/Tonejs/Tone.js" rel="external nofollow noopener" target="_blank">Tone.js</a> (sound effects) and some <a href="https://github.com/astropy/astropy" rel="external nofollow noopener" target="_blank">Python</a> (data retrieval). In this post I will focus on the sound mapping of data, but if you are interested in the visualization, all codecan be found in the project’s <a href="https://github.com/phber/Solarsounds.js" rel="external nofollow noopener" target="_blank">GitHub repo</a>.</p>
+
+<h2 id="background">Background</h2>
+
+<h3 id="keplers-harmonices-mundi">Kepler’s <em>Harmonices Mundi</em>
+</h3>
+
+<blockquote>
+  <p>“The heavenly motions are nothing but a continuous song for several voices, perceived not by the ear but by the intellect, a figured music which sets landmarks in the immeasurable flow of time.”</p>
+
+  <p>– <cite>Johannes Kepler, <em>Harmonices Mundi</em>, Book V, Chapter 7</cite></p>
+</blockquote>
+
+<p>The philosophical concept of <em>musica universalis</em> originated in Ancient Greece, and regards Pythagorean proportions in the movements of celestial bodies as a form of music. The theory was later developed by 16th-century astronomer Johannes Kepler, whl updated the theory by proposing that the harmony was produced, not just by the planets’ positions, but by the relationship between the distances of the planets from the sun to their orbital periods. Kepler thought that very occasionally, and possibly not since the time of creation, all of the planets “sang” together in perfect harmony<d-cite key="harmonices"></d-cite>.</p>
+
+<p>Finally, he discovered a property of the planets which fit the ratios startlingly well. Kepler found that the angular speeds of each planet at aphelion and perihelion, as measured from the Sun, produced consonant ratios. He was thence able to write down scales which he claimed each planet followed as a result of its changing angular velocity around its elliptical orbit. Mercury’s range of notes would be the largest, since its eccentricity was the most marked; Venus’s scale consisted of only one note. However, Kepler thought that the notes in these scales would be continually changing, producing a tone similar to a siren.
+<br></p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/keplerscales-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/keplerscales-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/keplerscales-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    
+    <img src="/assets/img/keplerscales.jpg" class="img-fluid rounded z-depth-1" width="90%" height="auto" data-zoomable="" style="margin:auto; display:block" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    
+  </picture>
+
+</figure>
+
+<div class="caption">
+ <i>"The single movement of the planets in the familiar term of notes. They do not form articulately the intermediate positions,  ... not by leaps and intervals but by a continuum of tunings ...</i> (From Harmonices Mundi)"
+</div>
+<p><br></p>
+
+<h3 id="retreiving-solar-system-data">Retreiving Solar System Data</h3>
+<p>To retrieve orbital data for the solar system , I used the Python library <a href="https://github.com/astropy/astropy" rel="external nofollow noopener" target="_blank">AstroPy</a>, which estimates planet ephemerides (orbits) using a combination of algorithms (such as Kepler’s equations). I also decided to include some planetary “facts” from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" rel="external nofollow noopener" target="_blank">NASA</a>.</p>
+
+<h2 id="data-mapping">Data Mapping</h2>
+
+<p>This table shows how I mapped data variables into sound. The choices were mostly arbitrary, and although they use some of Kepler’s conceived scales, they are not an accurate sound representation of his harmonical ideas. For example, Kepler pointed out that his harmonies are experienced with the sun as a center point, while I use a geocentric perspective.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Data parameter</th>
+      <th style="text-align: center">Mapping</th>
+      <th style="text-align: center">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Orbital Velocity</td>
+      <td style="text-align: center">Pitch</td>
+      <td style="text-align: center">Discretized and mapped to Kepler’s scales</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Distance to Earth</td>
+      <td style="text-align: center">Volume</td>
+      <td style="text-align: center">Relative to the planet’s max. and min. distance in its orbit</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Planet Radius</td>
+      <td style="text-align: center">Attack</td>
+      <td style="text-align: center">Radius relative to Earth</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Planet Temperature</td>
+      <td style="text-align: center">Vibrato frequency</td>
+      <td style="text-align: center">Temperature relative to Earth (in Kelvin)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Planet Density</td>
+      <td style="text-align: center">Vibrato  depth</td>
+      <td style="text-align: center">Density relative to Earth (kg/m3)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    </div>
+  </article>
+</div>
 
       
     </div>

@@ -4,7 +4,7 @@ title:  "Deepdive: The Sounds of the Planets"
 date:   2023-06-26
 description: An overview of how I performed data sonification of planet orbit data.
 tags: data-sonification, visualization, javscript, tonejs, threejs
-img: assets/img/solarsounds.JPG
+img: assets/img/solarsounds.jpg
 github: https://github.com/phber/Solarsounds.js
 bibliography: 2023.bib
 

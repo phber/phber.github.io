@@ -5,7 +5,7 @@ permalink: /curiosities/
 description: My attempt at illustrating some musical curiosities.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: []
 horizontal: false
 ---
 

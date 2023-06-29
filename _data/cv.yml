@@ -1,4 +1,4 @@
-- title: Basics
+- title: 🧑🏻 Personal Info
   type: map
   contents:
     - name: Name
@@ -10,34 +10,34 @@
     - name: E-mail
       value: <a href="mailto:bergstrom.philip@gmail.com">bergstrom.philip@gmail.com</a>   
 
-- title: Education
+- title: 📚 Education
   type: time_table
   contents:
     - title: B.A. in Classical Music
       institution: Academy of Music and Drama, Gothenburg, Sweden
-      year: 2023  
+      year: "2021-2024"  
       description:
         - 'Main instrument: Violin.'
     - title: M.Sc. in Machine Learning
       institution: Royal Institute of Technology, Stockholm, Sweden
-      year: 2019
+      year: "2017-2019"
       description:
-        - Degree project in Natural Language Processing (NLP).
         - One exchange semester at Keio University, Tokyo, Japan.
+        - Degree project in Natural Language Processing (NLP).
     - title: B.Sc. in Engineering Physhics
       institution: Royal Institute of Technology, Stockholm, Sweden.
-      year: 2016
+      year: "2013-2016"
 
-- title: Skills and Interests
+- title: 💡 Skills and Interests
   type: nested_list
   contents:
-    - title: Music
+    - title: 🎻 Music
       items: 
         - Playing classical and improvisation on the violin and some piano
         - Composing
         - Experimenting with technology 
-    - title: Technology
+    - title: ⌨️ Technology
       items:
         - Fluent in Python, Javascript and C#
-        - Machine learning, NLP and audio processing
+        - Machine Learning, NLP (Natural Language Processing) and Audio Processing
 

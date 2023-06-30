@@ -3,8 +3,6 @@ layout: post
 title: The Violin Keyboard
 description: Distribution of notes on a violin.
 img: assets/img/dist.png
-importance: 1
-category: 
 date:   2023-06-28
 
 ---

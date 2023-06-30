@@ -1,4 +1,4 @@
-- title: 🧑🏻 Personal Info
+- title: 𓀤 Personal Info
   type: map
   contents:
     - name: Name
@@ -10,7 +10,7 @@
     - name: E-mail
       value: <a href="mailto:bergstrom.philip@gmail.com">bergstrom.philip@gmail.com</a>   
 
-- title: 📚 Education
+- title: 𓏛 Education
   type: time_table
   contents:
     - title: B.A. in Classical Music
@@ -28,15 +28,15 @@
       institution: Royal Institute of Technology, Stockholm, Sweden.
       year: "2013-2016"
 
-- title: 💡 Skills and Interests
+- title: 𓀩 Skills and Interests
   type: nested_list
   contents:
-    - title: 🎻 Music
+    - title: 𓏢 Music
       items: 
-        - Playing classical and improvisation on the violin and some piano
-        - Composing
-        - Experimenting with technology 
-    - title: ⌨️ Technology
+        - Classical music and improvisation on the violin, and some piano
+        - Composing/arranging
+        - Experimenting with technology
+    - title: 𓀹 Technology
       items:
         - Fluent in Python, Javascript and C#
         - Machine Learning, NLP (Natural Language Processing) and Audio Processing

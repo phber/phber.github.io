@@ -6,12 +6,12 @@
  * Themes
  ******************************************************************************/
 :root {
-  --global-bg-color: #ffffff;
+  --global-bg-color: #d0cbd254;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
-  --global-theme-color: #8FBC8B;
-  --global-hover-color: #9ACD32;
+  --global-theme-color: #0c6220;
+  --global-hover-color: #63b117;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
@@ -19,6 +19,7 @@
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #ffffff;
+  --global-navbar-color: #fffea5;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -48,12 +49,12 @@
 }
 
 html[data-theme=dark] {
-  --global-bg-color: #1C1C1D;
+  --global-bg-color: #202124;
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
-  --global-theme-color: #8FBC8B;
-  --global-hover-color: #9ACD32;
+  --global-theme-color: #63b117;
+  --global-hover-color: #63b117;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
@@ -61,6 +62,7 @@ html[data-theme=dark] {
   --global-distill-app-color: #e8e8e8;
   --global-divider-color: #424246;
   --global-card-bg-color: #212529;
+  --global-navbar-color: #3c4043;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -139,6 +141,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: "Jost", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 hr {
@@ -264,8 +267,7 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: var(--global-navbar-color);
 }
 
 .navbar .dropdown-menu {
@@ -418,8 +420,8 @@ footer.sticky-bottom {
   border-color: var(--global-divider-color);
 }
 .cv .card .list-group-item .badge {
-  color: var(--global-card-bg-color) !important;
-  background-color: var(--global-theme-color) !important;
+  color: black !important;
+  background-color: #ffd04b !important;
 }
 
 .table-cv-map {
@@ -607,6 +609,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .title {
   font-weight: bolder;
+  color: var(--global-theme-color);
 }
 .publications ol.bibliography li .author a {
   border-bottom: 1px dashed var(--global-theme-color);

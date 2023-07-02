@@ -15,7 +15,7 @@ I was recently introduced to a neat concept by a teacher at my university, known
 For string players, this means that you are able to play a perfect (justly intonated) minor
 arpeggio by moving your hand position in equal distances without changing the distance between your fingers. This becomes especially useful for double bassists since they often have to perform shifts with a constant hand frame.
 
-{% include figure.html center=true width="60%" path="assets/img/arpeggiosecret.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html center=true width="60%" path="assets/img/arpeggiosecret.jpg" class="img-fluid rounded z-depth-1" zoomable=true%}
  <div class="caption">
 The minor arpeggio unfolding by equal distances on a violin. 
 </div>
@@ -26,7 +26,7 @@ There are several ways of explaining why the minor arpeggio secret works, but fu
 
 As an example, the fundamentals 1-6 of the undertone series of C form the shape of a pure minor arpeggio from F:
 
-{% include figure.html width="70%" path="https://upload.wikimedia.org/wikipedia/commons/f/f2/Undertone_series_on_C.png" class="img-fluid rounded z-depth-1" center=true %}
+{% include figure.html width="70%" path="https://upload.wikimedia.org/wikipedia/commons/f/f2/Undertone_series_on_C.png" zoomable=true class="img-fluid rounded z-depth-1" center=true %}
  <div class="caption">
 The undertone series on C.
 </div>

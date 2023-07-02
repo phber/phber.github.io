@@ -17,6 +17,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: 'Jost', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 hr {
@@ -170,8 +171,7 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: var(--global-navbar-color);
 }
 
 .navbar .dropdown-menu {
@@ -371,8 +371,8 @@ footer.sticky-bottom {
       border-color: var(--global-divider-color);
 
       .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
+        color: black !important;
+        background-color: #ffd04b !important;
       }
     }
   }
@@ -619,6 +619,8 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+        color: var(--global-theme-color);
+
       }
 
       .author {

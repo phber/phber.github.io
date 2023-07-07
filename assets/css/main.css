@@ -10,8 +10,8 @@
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
-  --global-theme-color: #189034;
-  --global-hover-color: #69be13;
+  --global-theme-color: #4a935b;
+  --global-hover-color: #4a935b;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
@@ -53,8 +53,8 @@ html[data-theme=dark] {
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
-  --global-theme-color: #63b117;
-  --global-hover-color: #63b117;
+  --global-theme-color: #92b96c;
+  --global-hover-color: #fffea5;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
@@ -62,7 +62,7 @@ html[data-theme=dark] {
   --global-distill-app-color: #e8e8e8;
   --global-divider-color: #424246;
   --global-card-bg-color: #212529;
-  --global-navbar-color: #3c4043;
+  --global-navbar-color: #0c0d0d;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -141,7 +141,15 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: "Jost", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.staatliches {
+  font-family: "Staatliches", "Roboto", " Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p.thick {
+  font-weight: bold;
 }
 
 hr {
@@ -270,7 +278,7 @@ blockquote {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-navbar-color);
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 .navbar .dropdown-menu {

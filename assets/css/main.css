@@ -141,11 +141,11 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: "Segoe UI", "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Jost", "Roboto", "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .staatliches {
-  font-family: "Staatliches", "Roboto", " Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Staatliches", "Roboto", "Jost", "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 p.thick {

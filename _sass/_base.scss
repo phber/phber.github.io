@@ -17,7 +17,13 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: 'Jost', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.staatliches {
+  font-family: "Staatliches", 'Roboto',' Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p.thick {
+  font-weight: bold;
 }
 
 hr {
@@ -173,7 +179,7 @@ blockquote {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-navbar-color);
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 .navbar .dropdown-menu {
@@ -329,7 +335,6 @@ blockquote {
     font-size: 0.8rem;
   }
 }
-
 
 // Footer
 footer.fixed-bottom {

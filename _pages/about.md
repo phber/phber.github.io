@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Musician (violinist) / Engineer (physicist).
+subtitle: Musician (violinist) / Engineer (physicist)
 
 profile:
   align: right

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🪐 My data sonification of planetary data is now [live]("https://phber.github.io/Solarsounds.js/). Read more about it [here](/curiosities/planet-sonification/).
+🌌 My data sonification of planetary data is now [live](//phber.github.io/Solarsounds.js/). Read more about it [here](/curiosities/planet-sonification/).

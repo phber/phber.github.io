@@ -2,6 +2,7 @@
 layout: page
 permalink: /creations/
 title: creations
+header: Musical Creations
 description: A list of some of my creative projects, such as compositions, performances and experiments. 
 years: [2023]
 nav: true

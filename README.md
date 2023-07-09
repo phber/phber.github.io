@@ -1,2 +1,5 @@
-# [phber.github.io](https://phber.github.io)
+# My Personal Website
+
+Available at:
+[phber.com](https://phber.com)
 

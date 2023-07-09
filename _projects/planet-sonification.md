@@ -12,7 +12,7 @@ bibliography: 2023.bib
 {% include figure.html href="https://phber.github.io/Solarsounds.js/" path="assets/img/solarsounds.jpg" class="img-fluid rounded z-depth-1" %}
 
 ## Introduction
-This is some background to my data sonification project, which can be experienced live [here](https://phber.github.io/Solarsounds.js/). 
+This is some background to my data sonification project, which can be experienced live [here](/Solarsounds.js/). 
 Sonification is the process that translates data into sound, or the aural counterpart to visualization. In this project, I decided to combine the two in order to _sonivisualize_ (in lack of better terms) orbital data from our solar system. The tools I used were [Three.js](https://github.com/mrdoob/three.js/) (visualization), [Tone.js](https://github.com/Tonejs/Tone.js) (sound effects) and some [Python](https://github.com/astropy/astropy) (data retrieval). In this post I will focus on the sound mapping of data, but if you are interested in the visualization all code can be found in the project's [GitHub repo](https://github.com/phber/Solarsounds.js).
 
 ## Background

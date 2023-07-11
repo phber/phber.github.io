@@ -7,6 +7,7 @@
  ******************************************************************************/
 :root {
   --global-bg-color: #d0cbd254;
+  --global-bg: url("/assets/img/bg.jpg");
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
@@ -18,7 +19,8 @@
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #ffffff;
+  --global-card-bg-color: rgb(255, 255, 255, 0.7);
+  --global-card-text-color: #747373;
   --global-navbar-color: #c1ccde;
   --about-navbar-color: rgb(193, 204, 222, 0.0);
   --global-tip-block: #42b983;
@@ -51,6 +53,7 @@
 
 html[data-theme=dark] {
   --global-bg-color: #202124;
+  --global-bg: url("/assets/img/bg-dark.jpg");
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
@@ -61,10 +64,11 @@ html[data-theme=dark] {
   --global-footer-text-color: #1C1C1D;
   --global-footer-link-color: #000000;
   --global-distill-app-color: #e8e8e8;
-  --global-divider-color: #424246;
-  --global-card-bg-color: #212529;
-  --global-navbar-color: #354257;
-  --about-navbar-color: rgb(53, 66, 87, 0.5);
+  --global-divider-color: #3a3a57;
+  --global-card-bg-color: rgb(44, 45, 60, 0.7);
+  --global-card-text-color: #c5cfe0;
+  --global-navbar-color: #5e6273;
+  --about-navbar-color: rgb(73, 83, 121, 0.5);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -216,6 +220,9 @@ blockquote {
 .card img {
   width: 100%;
 }
+.card .card-text {
+  color: var(--global-card-text-color) !important;
+}
 .card .card-title {
   color: var(--global-text-color);
   padding: 0;
@@ -234,8 +241,13 @@ blockquote {
   color: var(--global-theme-color);
 }
 
+body {
+  animation: fadeIn 0.5s;
+  background-image: var(--global-bg);
+  background-size: cover;
+}
+
 .about {
-  animation: fadeIn 3s;
   background-image: url("/assets/img/IMG_4934.jpg");
   background-position: top center;
   width: 100%;
@@ -294,6 +306,7 @@ blockquote {
 .navbar {
   box-shadow: none;
   background-color: var(--global-navbar-color);
+  opacity: 0.9;
 }
 
 .navbar .dropdown-menu {
@@ -446,8 +459,8 @@ footer.sticky-bottom {
   border-color: var(--global-divider-color);
 }
 .cv .card .list-group-item .badge {
-  color: black !important;
-  background-color: #ebeabc !important;
+  color: #3f455c !important;
+  background-color: #adb3c9 !important;
 }
 
 .table-cv-map {
@@ -712,10 +725,11 @@ footer.sticky-bottom {
   transition: all 0.15s ease;
 }
 .publications ol.bibliography li div.abstract.hidden {
-  border: dashed 1px var(--global-bg-color);
+  border: none;
 }
 .publications ol.bibliography li div.abstract.hidden.open {
   border-color: var(--global-text-color);
+  border: dashed 1px var(--global-text-color);
 }
 
 figure.highlight {

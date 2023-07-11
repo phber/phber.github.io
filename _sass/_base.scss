@@ -122,6 +122,20 @@ blockquote {
 
 // Profile
 
+.about {
+  animation: fadeIn 3s;
+  background-image: url("/assets/img/IMG_4934.jpg");
+  background-position: top center;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 .profile {
   width: 100%;
   margin-top: 16px;
@@ -177,10 +191,11 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  //border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-navbar-color);
-  opacity: 0.9;
+  //opacity: 0.95;
 }
+
 
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -379,7 +394,7 @@ footer.sticky-bottom {
 
       .badge {
         color: black !important;
-        background-color: #ffd04b !important;
+        background-color: #ebeabc !important;
       }
     }
   }

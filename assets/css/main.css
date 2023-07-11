@@ -10,8 +10,8 @@
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
-  --global-theme-color: #4a935b;
-  --global-hover-color: #4a935b;
+  --global-theme-color: #4b73af;
+  --global-hover-color: #4b73af;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
@@ -19,7 +19,8 @@
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #ffffff;
-  --global-navbar-color: #fffea5;
+  --global-navbar-color: #c1ccde;
+  --about-navbar-color: rgb(193, 204, 222, 0.0);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -53,8 +54,8 @@ html[data-theme=dark] {
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
-  --global-theme-color: #92b96c;
-  --global-hover-color: #fffea5;
+  --global-theme-color: #adb3c9;
+  --global-hover-color: #adb3c9;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
@@ -62,7 +63,8 @@ html[data-theme=dark] {
   --global-distill-app-color: #e8e8e8;
   --global-divider-color: #424246;
   --global-card-bg-color: #212529;
-  --global-navbar-color: #0c0d0d;
+  --global-navbar-color: #354257;
+  --about-navbar-color: rgb(53, 66, 87, 0.5);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -232,6 +234,21 @@ blockquote {
   color: var(--global-theme-color);
 }
 
+.about {
+  animation: fadeIn 3s;
+  background-image: url("/assets/img/IMG_4934.jpg");
+  background-position: top center;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .profile {
   width: 100%;
   margin-top: 16px;
@@ -276,9 +293,7 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-navbar-color);
-  opacity: 0.9;
 }
 
 .navbar .dropdown-menu {
@@ -432,7 +447,7 @@ footer.sticky-bottom {
 }
 .cv .card .list-group-item .badge {
   color: black !important;
-  background-color: #ffd04b !important;
+  background-color: #ebeabc !important;
 }
 
 .table-cv-map {

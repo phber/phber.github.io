@@ -58,7 +58,7 @@ html[data-theme=dark] {
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
   --global-theme-color: #9ea8cc;
-  --global-hover-color: #adb3c9;
+  --global-hover-color: #9ea8cc;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
@@ -306,7 +306,7 @@ body {
 .navbar {
   box-shadow: none;
   background-color: var(--global-navbar-color);
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .navbar .dropdown-menu {

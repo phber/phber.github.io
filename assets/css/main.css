@@ -11,8 +11,8 @@
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
-  --global-theme-color: #4b73af;
-  --global-hover-color: #4b73af;
+  --global-theme-color: #697cc4;
+  --global-hover-color: #697cc4;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
@@ -57,7 +57,7 @@ html[data-theme=dark] {
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
-  --global-theme-color: #adb3c9;
+  --global-theme-color: #9ea8cc;
   --global-hover-color: #adb3c9;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
@@ -68,7 +68,7 @@ html[data-theme=dark] {
   --global-card-bg-color: rgb(44, 45, 60, 0.3);
   --global-card-text-color: #c5cfe0;
   --global-navbar-color: #67758a;
-  --about-navbar-color: rgba(0, 0, 0, 0.4);
+  --about-navbar-color: rgba(0, 0, 0, 0.2);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;

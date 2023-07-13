@@ -7,7 +7,7 @@
  ******************************************************************************/
 :root {
   --global-bg-color: #d0cbd254;
-  --global-bg: url("/assets/img/bg.jpg");
+  --global-bg: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/assets/img/bg.jpg");
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
@@ -19,8 +19,8 @@
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: rgb(255, 255, 255, 0.7);
-  --global-card-text-color: #747373;
+  --global-card-bg-color: rgb(255, 255, 255, 0.3);
+  --global-card-text-color: #8d95af;
   --global-navbar-color: #c1ccde;
   --about-navbar-color: rgb(193, 204, 222, 0.0);
   --global-tip-block: #42b983;
@@ -53,7 +53,7 @@
 
 html[data-theme=dark] {
   --global-bg-color: #202124;
-  --global-bg: url("/assets/img/bg-dark.jpg");
+  --global-bg: linear-gradient(rgba(0, 20, 30, 0.75), rgba(0, 20, 30, 0.75)), url("/assets/img/bg.jpg");
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
@@ -64,11 +64,11 @@ html[data-theme=dark] {
   --global-footer-text-color: #1C1C1D;
   --global-footer-link-color: #000000;
   --global-distill-app-color: #e8e8e8;
-  --global-divider-color: #3a3a57;
-  --global-card-bg-color: rgb(44, 45, 60, 0.7);
+  --global-divider-color: #adb3c91c;
+  --global-card-bg-color: rgb(44, 45, 60, 0.3);
   --global-card-text-color: #c5cfe0;
-  --global-navbar-color: #5e6273;
-  --about-navbar-color: rgb(73, 83, 121, 0.5);
+  --global-navbar-color: #67758a;
+  --about-navbar-color: rgba(0, 0, 0, 0.4);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -248,7 +248,7 @@ body {
 }
 
 .about {
-  background-image: url("/assets/img/IMG_4934.jpg");
+  background-image: linear-gradient(var(--about-navbar-color), var(--about-navbar-color)), url("/assets/img/IMG_4934.jpg");
   background-position: top center;
   width: 100%;
   overflow: hidden;

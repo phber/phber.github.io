@@ -4,7 +4,7 @@
 
 :root {
   --global-bg-color: #d0cbd254;
-  --global-bg: url("/assets/img/bg.jpg");
+  --global-bg: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/assets/img/bg.jpg");
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
@@ -17,8 +17,8 @@
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: rgb(255, 255, 255, 0.7);
-  --global-card-text-color: #747373;
+  --global-card-bg-color: rgb(255, 255, 255, 0.3);
+  --global-card-text-color: #8d95af;
   --global-navbar-color: #c1ccde;
   --about-navbar-color: rgb(193, 204, 222, 0.0);
 
@@ -54,7 +54,7 @@
 
 html[data-theme='dark'] {
   --global-bg-color: #202124;
-  --global-bg: url("/assets/img/bg-dark.jpg");
+  --global-bg: linear-gradient(rgba(0, 20, 30, 0.75), rgba(0, 20, 30, 0.75)), url("/assets/img/bg.jpg");
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
@@ -65,12 +65,12 @@ html[data-theme='dark'] {
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #3a3a57;
-  --global-card-bg-color: rgb(44, 45, 60, 0.7);
+  --global-divider-color: #adb3c91c;
+  --global-card-bg-color: rgb(44, 45, 60, 0.3);
   --global-card-text-color: #c5cfe0;
 
-  --global-navbar-color: #5e6273;
-  --about-navbar-color: rgb(73, 83, 121, 0.5);
+  --global-navbar-color: #67758a;
+  --about-navbar-color: rgba(0, 0, 0, 0.4);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

@@ -8,8 +8,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #4b73af;
-  --global-hover-color: #4b73af;
+  --global-theme-color: #697cc4;
+  --global-hover-color: #697cc4;
 ;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
@@ -58,7 +58,7 @@ html[data-theme='dark'] {
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #adb3c9;
+  --global-theme-color: #9ea8cc;
   --global-hover-color: #adb3c9;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
@@ -70,7 +70,7 @@ html[data-theme='dark'] {
   --global-card-text-color: #c5cfe0;
 
   --global-navbar-color: #67758a;
-  --about-navbar-color: rgba(0, 0, 0, 0.4);
+  --about-navbar-color: rgba(0, 0, 0, 0.2);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

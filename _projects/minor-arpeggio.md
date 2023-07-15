@@ -35,20 +35,18 @@ When a string is lengthened or shortened by equal distances, the ratios between 
 | 4:6          | 3:2      | C4    |
 | 5:6          | 6:5      | Ab3   |
 | 6:6          | 1:1      | F3    |
- <div class="caption">
-The minor arpeggio from F3 derived from the undertone series on C.
-</div>
 
-In other words, the tones produced by the shortened strings form a pure F-minor arpeggio, explaining the "trick" above. 
+<div class="caption">The minor arpeggio from F3 derived from the undertone series on C6.</div>
+
+In other words, the tones produced by the shortened strings form a pure F-minor arpeggio, explaining the "trick" above.
 
 A more systematic way of determining what pitches lengthening or shortening a string equidistantly produces, is to consider the [undertone series](https://en.wikipedia.org/wiki/Undertone_series). While the overtone series consists of tones with wavelengths that are whole number divisions of a fundamental wavelength, the undertone series consists of the opposite, i.e. wavelengths that are whole number multiples of a wavelength. Consequently, when we imagine a string shortened by equal distances such as in the table above, the fundamental of each new string will be found in the undertone series.
 
 As an example, the 1-6th tones of the undertone series of C form the shape of the pure minor arpeggio from F, that we saw above:
 
 {% include figure.html width="70%" path="https://upload.wikimedia.org/wikipedia/commons/f/f2/Undertone_series_on_C.png" zoomable=true class="img-fluid rounded z-depth-1" center=true %}
- <div class="caption">
-The undertone series on C.
-</div>
+
+<div class="caption">The undertone series on C.</div>
 
 Thus, we could theoretically apply "the minor arpeggio trick" for any consecutive intervals found in the undertone series. However, from the 7th undertone and onwards, the pitches in the series start to diverge substantially from the pitches used in equal temperament, making them more difficult to use in a practical context.  
 

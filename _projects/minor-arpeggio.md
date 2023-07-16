@@ -25,7 +25,7 @@ This "trick" will work regardless of your starting note or position, and becomes
 
 ## Why it works
 
-When a string is lengthened or shortened by equal distances, the ratios between the old and new lengths will always be a whole number, giving rise to [just intervals](https://en.wikipedia.org/wiki/Just_intonation), or *pure* intervals. For example, if we imagine a string producing the fundamental tone F that is 6 units long and divide it into equal parts, the following intervals would arise:
+When a string's length is multiplied or divided by a whole number, the ratios between the old and new lengths will also be a whole number, giving rise to [just intervals](https://en.wikipedia.org/wiki/Just_intonation), or *pure* intervals. For example, if we imagine a string producing the fundamental tone F that is 6 units long and divide it into 6 equally long parts, the following intervals would arise:
 
 | Length ratio | Interval | Pitch |
 |--------------|----------|-------|
@@ -38,11 +38,11 @@ When a string is lengthened or shortened by equal distances, the ratios between 
 
 <div class="caption">The minor arpeggio from F3 derived from the undertone series on C6.</div>
 
-In other words, the tones produced by the shortened strings form a pure F-minor arpeggio, explaining the "trick" above.
+In other words, the tones produced by the shortened strings with equal lengths form a pure F-minor arpeggio, explaining the "trick" above.
 
 A more systematic way of determining what pitches lengthening or shortening a string equidistantly produces, is to consider the [undertone series](https://en.wikipedia.org/wiki/Undertone_series). While the overtone series consists of tones with wavelengths that are whole number divisions of a fundamental wavelength, the undertone series consists of the opposite, i.e. wavelengths that are whole number multiples of a wavelength. Consequently, when we imagine a string shortened by equal distances such as in the table above, the fundamental of each new string will be found in the undertone series.
 
-As an example, the 1-6th tones of the undertone series of C form the shape of the pure minor arpeggio from F, that we saw above:
+As an example, the 1-6th tones of the undertone series on C form the shape of the pure minor arpeggio from F that we saw above:
 
 {% include figure.html width="70%" path="https://upload.wikimedia.org/wikipedia/commons/f/f2/Undertone_series_on_C.png" zoomable=true class="img-fluid rounded z-depth-1" center=true %}
 
@@ -50,4 +50,4 @@ As an example, the 1-6th tones of the undertone series of C form the shape of th
 
 Thus, we could theoretically apply "the minor arpeggio trick" for any consecutive intervals found in the undertone series. However, from the 7th undertone and onwards, the pitches in the series start to diverge substantially from the pitches used in equal temperament, making them more difficult to use in a practical context.  
 
-If you want to further explore how to apply this concept on the double bass, check out the book *Fractal Fingering* by bassist [David Allen Moore](https://www.fractalbassist.com/).
+If you want to further explore how to apply these concepts on the double bass, check out the book *Fractal Fingering* by bassist [David Allen Moore](https://www.fractalbassist.com/).

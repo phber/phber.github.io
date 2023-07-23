@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🪐 My data sonification of planetary data is now [live](/Solarsounds.js/). Read more about it [here](/curiosities/planet-sonification/).
+🪐 My data sonification of planetary data is now [live](/harmonices-mundi/). Read more about it [here](/curiosities/harmonices-mundi/).

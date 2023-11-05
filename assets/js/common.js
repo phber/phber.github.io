@@ -7,6 +7,11 @@ $(document).ready(function() {
     $('a.bibtex').click(function() {
         $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
         $(this).parent().parent().find(".abstract.hidden.open").toggleClass('open');
+
+    });
+    $('a.audio').click(function() {
+        $(this).parent().parent().find(".audio.hidden").toggleClass('open');
+
     });
     $('a').removeClass('waves-effect waves-light');
 });

@@ -725,11 +725,17 @@ footer.sticky-bottom {
   transition: all 0.15s ease;
 }
 .publications ol.bibliography li div.abstract.hidden {
-  border: none;
+  border: dashed 0.5px var(--global-text-color);
+  opacity: 0;
 }
 .publications ol.bibliography li div.abstract.hidden.open {
-  border-color: var(--global-text-color);
-  border: dashed 1px var(--global-text-color);
+  opacity: 1;
+}
+.publications ol.bibliography li div.audio.hidden {
+  opacity: 0;
+}
+.publications ol.bibliography li div.audio.hidden.open {
+  opacity: 1;
 }
 
 figure.highlight {

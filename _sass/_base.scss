@@ -746,12 +746,19 @@ footer.sticky-bottom {
       }
 
       div.abstract.hidden {
-        border: none;
+        border: dashed .5px var(--global-text-color);
+        opacity: 0;
       }
 
       div.abstract.hidden.open {
-        border-color: var(--global-text-color);
-        border: dashed 1px var(--global-text-color);
+        opacity: 1;
+      }
+      div.audio.hidden {
+        opacity: 0;
+      }
+
+      div.audio.hidden.open {
+        opacity: 1;
       }
     }
   }

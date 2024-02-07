@@ -3,7 +3,7 @@ layout: page
 title: curiosities
 header: Musical Curiosities
 permalink: /curiosities/
-description: My attempt at illustrating some musical curiosities.
+description: A mix of things and topics in music I find interesting.
 nav: true
 nav_order: 2
 display_categories: []

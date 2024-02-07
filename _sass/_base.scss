@@ -17,15 +17,24 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: 'Quicksand', 'Jost', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Source Code Pro', 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.myname {
+  font-family: "Honk", 'Source Code Pro', 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .staatliches {
-  font-family: "Staatliches", 'Jost', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Source Code Pro', 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-palette: --custom-palette;
+}
+@font-palette-values --custom-palette {
+  font-family: 'Honk';
+  base-palette: 7;
 }
 p.thick {
   font-weight: bold;
 }
-
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -249,6 +258,7 @@ body  {
     &:hover {
       color: var(--global-hover-color);
     }
+    font-weight: 400;
   }
 
   .navbar-nav .nav-item.active>.nav-link {

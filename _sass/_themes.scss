@@ -9,7 +9,7 @@
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #697cc4;
-  --global-hover-color: #697cc4;
+  --global-hover-color: #ff90f2;
 ;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
@@ -19,7 +19,7 @@
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: rgb(255, 255, 255, 0.3);
   --global-card-text-color: #8d95af;
-  --global-navbar-color: #c1ccde;
+  --global-navbar-color: #b3cdec;
   --about-navbar-color: rgb(193, 204, 222, 0.0);
 
   --global-tip-block: #42b983;
@@ -54,12 +54,12 @@
 
 html[data-theme='dark'] {
   --global-bg-color: #202124;
-  --global-bg: linear-gradient(rgba(0, 20, 30, 0.75), rgba(0, 20, 30, 0.75)), url("/assets/img/bg.jpg");
+  --global-bg: linear-gradient(rgba(0, 18, 30, 0.75), rgba(0, 18, 30, 0.75)), url("/assets/img/bg.jpg");
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #9ea8cc;
-  --global-hover-color: #9ea8cc;
+  --global-theme-color: #7fb8e3;
+  --global-hover-color: #ff62ed;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
@@ -69,7 +69,7 @@ html[data-theme='dark'] {
   --global-card-bg-color: rgb(44, 45, 60, 0.3);
   --global-card-text-color: #c5cfe0;
 
-  --global-navbar-color: #67758a;
+  --global-navbar-color: rgb(88, 100, 133);
   --about-navbar-color: rgba(0, 0, 0, 0.2);
 
   --global-tip-block: #42b983;

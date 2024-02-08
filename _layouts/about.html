@@ -15,11 +15,18 @@
     .navbar-nav > a, .navbar-nav > li > a { 
       color: black !important; 
     }
-    .navbar-nav > .active > a, .navbar-nav > li > a:hover { 
+    .navbar-nav > li > a:hover { 
+      color: #ff90f2 !important; 
+    }
+    .navbar-nav > .active > a
+    { 
       color: #697cc4!important; 
     }
-    .navbar {
+    .navbar{
       background-color: rgba(0, 0, 0, 0) !important;
+    }
+    .navbar-opacity{
+      background-color: rgba(46, 77, 108, 0.9) !important;
     }
   </style>
 </head>
@@ -96,6 +103,11 @@
   {% include scripts/badges.html %}
   {% include scripts/mathjax.html %}
   {% include scripts/analytics.html %}
+  <script type="text/javascript">
+    $(".navbar-toggler").click(function(){
+      $("nav").toggleClass("navbar-opacity");
+    });
+  </script>
 </body>
 
 </html>

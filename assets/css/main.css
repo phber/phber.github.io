@@ -57,8 +57,8 @@ html[data-theme=dark] {
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
-  --global-theme-color: #7fb8e3;
-  --global-hover-color: #ff62ed;
+  --global-theme-color: #b3cdec;
+  --global-hover-color: #ff90f2;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
@@ -150,20 +150,12 @@ strong {
   font-family: "Source Code Pro", "Quicksand", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.myname {
-  font-family: "Honk", "Source Code Pro", "Quicksand", "Open Sans", "Helvetica Neue", sans-serif;
-}
-
 .staatliches {
   font-family: "Source Code Pro", "Quicksand", "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-palette: --custom-palette;
 }
 
-@font-palette-values --custom-palette {
-  font-family: "Honk";
-  base-palette: 7;
-}
 p.thick {
   font-weight: bold;
 }
@@ -204,7 +196,6 @@ img {
 }
 
 blockquote {
-  background: var(--global-bg-color);
   border-left: 2px solid var(--global-theme-color);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
@@ -255,11 +246,12 @@ body {
   animation: fadeIn 0.5s;
   background-image: var(--global-bg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .about {
   background-image: linear-gradient(var(--about-navbar-color), var(--about-navbar-color)), url("/assets/img/IMG_4934.jpg");
-  background-position: top center;
+  background-position: 50% 50%;
   width: 100%;
   overflow: hidden;
   z-index: -2;
@@ -316,7 +308,7 @@ body {
 .navbar {
   box-shadow: none;
   background-color: var(--global-navbar-color);
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 .navbar .dropdown-menu {

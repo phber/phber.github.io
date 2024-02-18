@@ -64,15 +64,6 @@
     
 
   <style>
-    .navbar-toggler .icon-bar{
-      background-color: black !important; 
-    }
-    .navbar-nav > a, .navbar-nav > li > a { 
-      color: black !important; 
-    }
-    .navbar-nav > li > a:hover { 
-      color: #ff90f2 !important; 
-    }
     .navbar-nav > .active > a
     { 
       color: #697cc4!important; 
@@ -81,7 +72,7 @@
       background-color: rgba(0, 0, 0, 0) !important;
     }
     .navbar-opacity{
-      background-color: rgba(46, 77, 108, 0.9) !important;
+      background-color: var(--global-navbar-color) !important;
     }
   </style>
 </head>
@@ -174,13 +165,20 @@
 
         <!-- News -->
         <h2><a href="/news/" style="color: inherit;">news</a></h2>          <div class="news">
-            <div class="table-responsive">
+            <div class="table-responsive" style="max-height: 60vw">
               <table class="table table-sm table-borderless">
               
                 <tr>
                   <th scope="row">Feb 7, 2024</th>
                   <td>
-                    🎼 A recording and the score of my composition “Into the Valley” has been added to my <a href="/creations">creations</a>.
+                    🎻 A post about approaching improvisation as a classical violinist has been added to <a href="/curiosities/violin-improvisation/">curiosities</a>.
+
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Feb 7, 2024</th>
+                  <td>
+                    💿 A recording and the score of my composition “Into the Valley” has been added to <a href="/creations">creations</a>.
 
                   </td>
                 </tr>

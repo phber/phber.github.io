@@ -19,17 +19,10 @@ strong {
   color: var(--global-text-color);
   font-family: 'Source Code Pro', 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.myname {
-  font-family: "Honk", 'Source Code Pro', 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 .staatliches {
   font-family: 'Source Code Pro', 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 600;
   font-palette: --custom-palette;
-}
-@font-palette-values --custom-palette {
-  font-family: 'Honk';
-  base-palette: 7;
 }
 p.thick {
   font-weight: bold;
@@ -73,7 +66,7 @@ img {
 }
 
 blockquote {
-  background: var(--global-bg-color);
+  //background: var(--global-bg-color);
   border-left: 2px solid var(--global-theme-color);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
@@ -138,11 +131,12 @@ body  {
   animation: fadeIn 0.5s;
   background-image: var(--global-bg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .about {
   background-image: linear-gradient(var(--about-navbar-color), var(--about-navbar-color)), url("/assets/img/IMG_4934.jpg");
-  background-position: top center;
+  background-position: 50% 50%;
   width: 100%;
   overflow: hidden;
   z-index: -2;
@@ -210,7 +204,7 @@ body  {
   box-shadow: none;
   //border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-navbar-color);
-  opacity: 0.95;
+  opacity: 0.90;
 }
 
 

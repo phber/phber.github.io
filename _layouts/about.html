@@ -9,15 +9,6 @@
   {%- endif -%}
   {% include head.html %}
   <style>
-    .navbar-toggler .icon-bar{
-      background-color: black !important; 
-    }
-    .navbar-nav > a, .navbar-nav > li > a { 
-      color: black !important; 
-    }
-    .navbar-nav > li > a:hover { 
-      color: #ff90f2 !important; 
-    }
     .navbar-nav > .active > a
     { 
       color: #697cc4!important; 
@@ -26,7 +17,7 @@
       background-color: rgba(0, 0, 0, 0) !important;
     }
     .navbar-opacity{
-      background-color: rgba(46, 77, 108, 0.9) !important;
+      background-color: var(--global-navbar-color) !important;
     }
   </style>
 </head>

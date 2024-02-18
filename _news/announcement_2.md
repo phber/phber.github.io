@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎼 A recording and the score of my composition "Into the Valley" has been added to my [creations](/creations).
+💿 A recording and the score of my composition "Into the Valley" has been added to [creations](/creations).

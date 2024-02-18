@@ -2,7 +2,7 @@
 layout: distill
 title:  "Deepdive: The Harmony of the World"
 date:   2023-06-26
-description: An overview of how I turned planet orbit data into sound using Johannes Kepler's music theory.
+description: Turning planet orbit data into sound using Johannes Kepler's music theory.
 tags: data-sonification, visualization, javscript, tonejs, threejs
 img: assets/img/solarsounds.jpg
 github: https://github.com/phber/harmonices-mundi

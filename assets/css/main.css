@@ -19,7 +19,7 @@
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: rgb(255, 255, 255, 0.3);
+  --global-card-bg-color: rgb(255, 255, 255, 0.5);
   --global-card-text-color: #8d95af;
   --global-navbar-color: #b3cdec;
   --about-navbar-color: rgb(193, 204, 222, 0.0);
@@ -246,6 +246,7 @@ body {
   animation: fadeIn 0.5s;
   background-image: var(--global-bg);
   background-size: cover;
+  background-position: bottom;
   background-attachment: fixed;
 }
 
@@ -580,8 +581,19 @@ footer.sticky-bottom {
 }
 .projects .grid-sizer,
 .projects .grid-item {
-  width: 250px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .projects .grid-sizer,
+  .projects .grid-item {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .projects .grid-sizer,
+  .projects .grid-item {
+    width: 250px;
+  }
 }
 .projects h2.category {
   color: var(--global-divider-color);

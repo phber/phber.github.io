@@ -131,6 +131,7 @@ body  {
   animation: fadeIn 0.5s;
   background-image: var(--global-bg);
   background-size: cover;
+  background-position: bottom;
   background-attachment: fixed;
 }
 
@@ -567,8 +568,21 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: 250px;
     margin-bottom: 10px;
+  }
+
+  @media screen and (min-width:768px) {
+    .grid-sizer,
+    .grid-item {
+      width: 45%;
+    }
+  }
+
+  @media screen and (min-width:992px) {
+    .grid-sizer,
+    .grid-item {
+      width: 250px;
+    }
   }
 
   h2.category {

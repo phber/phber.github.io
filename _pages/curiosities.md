@@ -1,7 +1,7 @@
 ---
 layout: page
 title: curiosities
-header: Musical Curiosities
+header: Curiosities
 permalink: /curiosities/
 description: A mix of things and topics in music I find interesting.
 nav: true

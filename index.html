@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
 <title>Philip Bergström, Violin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Philip Bergström is a freelance violinist and violin teacher based in Stockholm, playing classical, pop, jazz and folk for weddings, funerals, parties and private events, with lessons and ensemble work including The Django Quartet and Max Rolfstam Ensemble.">
@@ -203,9 +204,18 @@
   .hero{ position:relative; overflow:clip; border-bottom: 1px solid var(--rule-soft); }
   .clef{
     position:absolute; right: clamp(1.5rem, 5vw, 4.5rem); top: 8%;
-    font-family:"Cormorant Garamond", serif;
-    font-size: clamp(7rem, 15vw, 11rem); line-height:1;
+    line-height:1; display:flex; align-items:center;
     color: var(--accent); opacity:0.1; pointer-events:none; user-select:none;
+  }
+  .clef .dyn-p{
+    font-family:"Cormorant Garamond", serif; font-weight:700; font-style:italic;
+    font-size: clamp(5rem, 10.5vw, 7.6rem);
+    transform: translateY(0.05em) translateX(0.08em);
+  }
+  .clef .dyn-flat{
+    font-family:"Cormorant Garamond", serif; font-weight:400; font-style:normal;
+    font-size: clamp(4.6rem, 9.8vw, 7.2rem);
+    margin-left: -0.12em;
   }
   .hero-name{
     font-size: clamp(3rem, 8vw, 5.6rem);
@@ -544,7 +554,7 @@
 
 <!-- HERO + ABOUT -->
 <header id="top" class="hero">
-  <div aria-hidden="true" class="clef">𝄞</div>
+  <div aria-hidden="true" class="clef"><span class="dyn-p">p</span><span class="dyn-flat">♭</span></div>
   <div class="container" style="padding-block: 4.5rem 4rem; position:relative;">
     <p class="eyebrow reveal" data-i18n="hero.eyebrow">Freelance Violinist &amp; Teacher — Stockholm</p>
     <h1 class="hero-name reveal">Philip <span class="surname">Bergström</span></h1>
@@ -553,6 +563,7 @@
       <div style="max-width:58ch;">
         <p class="dropcap" data-i18n="hero.bio1">I am a violinist based in Stockholm. I have studied at the Academy of Music and Drama in Gothenburg and hold a university diploma in violin teaching from SMI in Stockholm.</p>
         <p data-i18n="hero.bio2">I am classically trained, but I also play other genres such as pop and jazz, performing at weddings, funerals, parties, and other private and public gigs. I play a violin by Peter Westerlund, built in 2025.</p>
+        <p data-i18n-html="hero.bio3"></p>
       </div>
       <div>
         <div class="portrait-frame reveal">
@@ -708,6 +719,7 @@
       "hero.eyebrow": "Frilansande violinist &amp; lärare — Stockholm",
       "hero.bio1": "Jag är violinist baserad i Stockholm. Jag har studerat vid Högskolan för scen och musik i Göteborg och har en högskoleexamen i violinpedagogik från SMI i Stockholm.",
       "hero.bio2": "Jag är klassiskt skolad, men spelar även andra genrer såsom pop och jazz, och uppträder vid bröllop, begravningar, fester samt andra privata och offentliga tillställningar. Jag spelar på en violin byggd av Peter Westerlund år 2025.",
+      "hero.bio3": "En stor inspirationskälla för mig är Stéphane Grappelli. Jag är också verksam som violinlärare i Stockholm och spelar i flera <a href=\"#collaborations\">ensembler och band</a>.",
       "hero.availableFor": "Tillgänglig för",
       "hero.availableList": "Bröllop · Begravningar · Fester<br>Privata evenemang · Privatlektioner",
       "hero.contactBtn": "Kontakt &amp; bokning",
@@ -717,8 +729,8 @@
       "collab.djangoTags": "Fester · Privata evenemang · Bröllop · Bakgrundsmusik",
       "collab.maxDesc": "En svensk grupp ledd av Max Rolfstam, som blandar jazz med svensk folkmusik. Besättningen förenar traditionella folkinstrument — violin och nyckelharpa — med klassisk jazzinstrumentering, för ett ljud som är varmt, vitalt och till stor del improviserat.",
       "collab.maxTags": "Folk &amp; jazz · Festivaler · Konserter",
-      "journal.eyebrow": "Mellan strängarna",
-      "journal.heading": "Journal och tips",
+      "journal.eyebrow": "Journal",
+      "journal.heading": "Mellan strängarna",
       "journal.subtitle": "Anteckningar om musik och violinspel.",
       "journal.readMore": "Läs mer →",
       "journal.readAria": "Läs: ",
@@ -747,6 +759,7 @@
       "hero.eyebrow": "Freelance Violinist &amp; Teacher — Stockholm",
       "hero.bio1": "I am a violinist based in Stockholm. I have studied at the Academy of Music and Drama in Gothenburg and hold a university diploma in violin teaching from SMI in Stockholm.",
       "hero.bio2": "I am classically trained, but I also play other genres such as pop and jazz, performing at weddings, funerals, parties, and other private and public gigs. I play a violin by Peter Westerlund, built in 2025.",
+      "hero.bio3": "A major inspiration for me is Stéphane Grappelli. I am also active as a violin teacher in Stockholm and play in several <a href=\"#collaborations\">bands and ensembles</a>.",
       "hero.availableFor": "Available for",
       "hero.availableList": "Weddings · Funerals · Parties<br>Private Events · Private Lessons",
       "hero.contactBtn": "Contact &amp; Booking",
@@ -756,8 +769,8 @@
       "collab.djangoTags": "Parties · Private Events · Weddings · Background Music",
       "collab.maxDesc": "A Swedish group led by Max Rolfstam, blending jazz with Swedish folk music. The lineup pairs traditional folk instruments — violin and nyckelharpa — with classic jazz instrumentation, for a sound that's warm, vibrant, and largely improvised.",
       "collab.maxTags": "Folk &amp; Jazz · Festivals · Concerts",
-      "journal.eyebrow": "Between the Strings",
-      "journal.heading": "Journal and Tips",
+      "journal.eyebrow": "Journal",
+      "journal.heading": "Between the Strings",
       "journal.subtitle": "Notes on music and violin playing.",
       "journal.readMore": "Read more →",
       "journal.readAria": "Read: ",
@@ -1063,3 +1076,5 @@
   applyLanguage(currentLang);
 </script>
 </body>
+
+</body></html>
